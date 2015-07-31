@@ -1,0 +1,54 @@
+\documentclass{spie}
+
+\usepackage{cite}
+
+\usepackage{times} % Times New Roman
+
+\usepackage[colorinlistoftodos,color=pink]{todonotes}
+\usepackage{xkeyval}
+\presetkeys{todonotes}{inline}{}
+
+\usepackage{lipsum} % for lorem ipsum, remove this
+
+\newcommand{\fourier}{\mathcal{F}}
+
+\title{A method of writing ICMV 2015 papers in TeX}
+
+\author{Timofey S. Chernov\supit{1} and Dmitry P. Nikolaev\supit{2} and Vitali M. Kliatskine\supit{3} 
+  \skiplinehalf
+  \normalsize 
+  \supit{1}National University of Science and Technology "MISIS", 119049, Moscow, Russia; \\
+  \supit{2}Institute for Information Transmission Problems RAS, 127051, Moscow, Russia; \\
+  \supit{3}Smart Engines Ltd, Victoria, Seychelles
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  \lipsum[6]
+  
+  \keywords{document understanding, image analysis, MS Word annoyance}
+\end{abstract}
+
+\section{Introduction}
+
+\lipsum[1]
+
+\section{First section}
+
+A reference example \LaTeX \cite{fourier_applications}.
+
+\section{Conclusion}
+
+\lipsum[42]
+
+\acknowledgements
+
+This work is supported by Russian Foundation for Basic Research (projects LE-ET-1337, FA-CE-8D). 
+
+\bibliographystyle{spiebib}
+\bibliography{bibliography}
+
+\end{document}
