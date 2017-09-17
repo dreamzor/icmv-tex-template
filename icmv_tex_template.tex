@@ -3,23 +3,26 @@
 \usepackage{cite}
 
 \usepackage{times} % Times New Roman
+\usepackage{indentfirst} % Indent first paragraphs
 
-\usepackage[colorinlistoftodos,color=pink]{todonotes}
+\usepackage[colorinlistoftodos,color=pink]{todonotes} % For fancy \todo{something}
 \usepackage{xkeyval}
 \presetkeys{todonotes}{inline}{}
 
-\usepackage{lipsum} % for lorem ipsum, remove this
+\usepackage{lipsum} % For lorem ipsum, remove this
 
 \newcommand{\fourier}{\mathcal{F}}
 
-\title{A method of writing ICMV 2015 papers in TeX}
+\title{A method for writing ICMV papers in TeX}
 
-\author{Timofey S. Chernov\supit{1} and Dmitry P. Nikolaev\supit{2} and Vitali M. Kliatskine\supit{3} 
+\author{Timofey S. Chernov\supit{1,3}, Second L. Author\supit{2}, Third Author\supit{3}, 		
+        \skiplinehalf
+        Fourth Author\supit{1,2}, Need More Authors\supit{1,2,3}
   \skiplinehalf
   \normalsize 
-  \supit{1}National University of Science and Technology "MISIS", 119049, Moscow, Russia; \\
-  \supit{2}Institute for Information Transmission Problems RAS, 127051, Moscow, Russia; \\
-  \supit{3}Smart Engines Ltd, Victoria, Seychelles
+  \supit{1}Some University, Moscow, Russia; \\
+  \supit{2}Another University, Moscow, Russia; \\
+  \supit{3}Some Company, Moscow, Russia
 }
 
 \begin{document}
@@ -50,5 +53,29 @@ This work is supported by Russian Foundation for Basic Research (projects LE-ET-
 
 \bibliographystyle{spiebib}
 \bibliography{bibliography}
+
+% This table is required by ICMV for review and will not be published
+
+\clearpage
+
+\section*{AUTHORS' BACKGROUND}
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | c | c | p{45mm} | c | } \hline
+		Name & Title & \centering Research Field & Personal website \\
+		\hline
+		Timofey Chernov & PhD Candidate & Computer science, systems programming & \texttt{github.com/dreamzor} \\
+		\hline
+		Second Author & Bachelor Student &  & \\
+ 		\hline
+ 		Third Author & Master Student &  & \\
+ 		\hline
+ 		Fourth Author & Full Professor &  & \\
+  	\hline
+ 		Need More Authors & Associate Professor &  & \\
+		\hline
+	\end{tabular}
+\end{table}
 
 \end{document}
